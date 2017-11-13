@@ -1,9 +1,10 @@
 # Fibonacci
 
-Studying Fibonacci sequence: finding its n-th element using **recursion**, **iteration**
-and an **explicit** formula (with its proof), also benchmarking and evaluating those implementations.
+Studying and benchmarking Fibonacci sequence: finding its n-th element using **recursion**, **iteration** and a **closed form**.
 
-Soon available on Medium.
+~~Soon available on Medium: https://medium.com/@marcellguilherme/~
+
+Closed form demonstration: https://github.com/Mazuh/MyNotebook-Math/blob/master/files/discrete/fibonacci.pdf
 
 ## About Fibonacci sequence
 
@@ -13,15 +14,16 @@ system in the Western World on Middle Ages.
 The n-th number of such sequence is equals to the sum of the two directly previous numbers,
 assuming that the 1st and 2nd are both 1. That said, here's a few of them:
 
-> 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+> 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89…
 
 There's a way to describe it using this recurrence relation:
 
 ```
 Let n be a natural number,
+f(0) = 0
 f(1) = 1
 f(2) = 1
-f(n) = f(n-1) + f(n-2), for any n > 2
+f(n) = f(n-1) + f(n-2), for n > 1
 ```
 
 It's very common to see Fibonacci spiral...
