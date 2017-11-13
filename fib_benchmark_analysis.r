@@ -1,0 +1,34 @@
+fibtests <- read.csv('./history/benchmark_13nov2017_n4050i3.csv')
+
+plot(
+  x=fibtests$n_arg,
+  y=fibtests$recursive_seconds,
+  type='o',
+  col='red',
+  main='Benchmarking de algoritmos Fibonacci',
+  xlab='Valor do argumento n da função',
+  ylab='Segundos levados executar 10^6 de vezes',
+  ylim=c(0, 10)
+)
+
+lines(
+  x=fibtests$n_arg,
+  y=fibtests$iterative_seconds,
+  type='o',
+  col='green'
+)
+
+lines(
+  x=fibtests$n_arg,
+  y=fibtests$explicit_seconds,
+  type='o',
+  col='blue'
+)
+
+legend(
+  x=12,
+  y=9,
+  c('Recursivo', 'Iterativo', 'Fechado'),
+  fill=c('red', 'green', 'blue')
+)
+
