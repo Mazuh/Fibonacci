@@ -26,8 +26,8 @@ lines(
 )
 
 legend(
-  x=12,
-  y=9,
+  x=30,
+  y=10,
   c('Recursivo', 'Iterativo', 'Fechado'),
   fill=c('red', 'green', 'blue')
 )

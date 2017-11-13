@@ -9,9 +9,13 @@ with open('./fibonacci_benchmark.csv', 'w') as reportfile:
         'iterative_seconds',
         'explicit_seconds'
     ])
-    for n in range(1, 40):
+    for n in range(1, 46):
         print('n={}...'.format(n), end='')
-        rec = timeit('fib.f_recursive({})'.format(n), setup='import fib')
+        if n < 15:
+            rec = timeit('fib.f_recursive({})'.format(n), setup='import fib')
+        else:
+            rec = 'NA'
+            print(' ~recur~', end='')
         it = timeit('fib.f_iterative({})'.format(n), setup='import fib')
         exp = timeit('fib.f_explicit({})'.format(n), setup='import fib')
         print(' OK')
