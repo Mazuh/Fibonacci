@@ -2,7 +2,7 @@
 
 Studying and benchmarking Fibonacci sequence: finding its n-th element using **recursion**, **iteration** and a **closed form**.
 
-~~Soon available on Medium: https://medium.com/@marcellguilherme/~
+> Available on Medium: https://medium.com/@marcellguilherme/fibonacci-9aded34b2fb6
 
 Closed form demonstration: https://github.com/Mazuh/MyNotebook-Math/blob/master/files/discrete/fibonacci.pdf
 
